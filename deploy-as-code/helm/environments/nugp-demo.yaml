@@ -16,6 +16,7 @@ cluster-configs:
         monitoring,
         playground,
         zookeeper-cluster,
+        es-cluster-infra
       ]
 
   rbac:
@@ -41,7 +42,7 @@ cluster-configs:
         es-indexer-host: "http://elasticsearch-data-v1.es-cluster:9200/"
         flyway-locations: "filesystem:/flyway/sql,filesystem:/flyway/seed,filesystem:/flyway/qa"
         kafka-brokers: "kafka-v2.kafka-cluster:9092"
-        kafka-infra-brokers: "kafka-v2.kafka-cluster:9092"
+        kafka-infra-brokers: "kafka-v2-infra.kafka-cluster:9092"
         logging-level-jdbc: "debug"
         mobile-validation-workaround: "true"
         s3-assets-bucket: "(pb-egov-assets|egov-playground-assets)"
@@ -689,6 +690,27 @@ kafka-v2:
   offsetsReplicationFactor: "3"
 
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+kafka-v2-infra:
+  image:
+    tag: "5.4.1"
+  persistence:
+    enabled: true
+    aws:
+      - volumeId: "vol-0f14905379c2edfb4"
+        zone: ap-south-1b
+      - volumeId: "vol-08a267e79fb55412e"
+        zone: ap-south-1b
+      - volumeId: "vol-0774809ce88409255"
+        zone: ap-south-1b
+  zookeeperHosts: "zookeeper-v2.zookeeper-cluster:2181/kafka-v2-infra"
+
+  heapOptions: "-Xms704M -Xmx704M"
+  memory_limits: 1408Mi
+  lingerMs: "250"
+  numberPartitions: "3"
+  replicationFactor: "2"
+  minInsyncReplicas: "1"
+  offsetsReplicationFactor: "3"
 
 # zookeeper-v2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 zookeeper-v2:
@@ -742,7 +764,29 @@ elasticsearch-data-v1:
     limits:
       # cpu: "1000m"
       memory: "2Gi"
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+elasticsearch-data-infra-v1:
+  image:
+    tag: 6.6.2
+  persistence:
+    enabled: true
+    aws:
+      - volumeId: "vol-0063bb1a880a24d1a"
+        zone: ap-south-1b
+      - volumeId: "vol-07e23189b1e346e7b"
+        zone: ap-south-1b
+      - volumeId: "vol-09908c2601be1c931"
+        zone: ap-south-1b
 
+  esJavaOpts: "-Xmx1g -Xms1g"
+  resources:
+    requests:
+      # cpu: "1000m"
+      memory: "2Gi"
+    limits:
+      # cpu: "1000m"
+      memory: "2Gi"      
+#<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 elasticsearch-master-v1:
   replicas: 3
   image:
@@ -763,7 +807,28 @@ elasticsearch-master-v1:
       memory: "896Mi"
     limits:
       memory: "896Mi"
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+elasticsearch-master-infra-v1:
+  replicas: 3
+  image:
+    tag: 6.6.2
+  persistence:
+    enabled: true
+    aws:
+      - volumeId: "vol-02a7f4a347090de82"
+        zone: ap-south-1b
+      - volumeId: "vol-04ae2a469de198fd3"
+        zone: ap-south-1b
+      - volumeId: "vol-067b3b5b98bb9da5e"
+        zone: ap-south-1b
 
+  esJavaOpts: "-Xmx448m -Xms448m"
+  resources:
+    requests:
+      memory: "896Mi"
+    limits:
+      memory: "896Mi"      
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 es-curator-infra:
   namespace: es-cluster
   schedule: "45 18 * * *"
