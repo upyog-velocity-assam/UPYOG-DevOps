@@ -189,6 +189,7 @@ egov-location:
   memory_limits: 512Mi
 
 egov-notification-sms:
+  sms.provider.class: "Console"
   sms-provider-url: "http://api.smscountry.com/SMSCwebservice_bulk.aspx"
   sms.provider.url: "http://api.smscountry.com/SMSCwebservice_bulk.aspx"
   sms.provider.class: "Generic"
