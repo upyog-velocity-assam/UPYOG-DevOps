@@ -1004,7 +1004,9 @@ financeTenants: |
 
 egov-finance:
   dev_mode: true
+  egov.default.services.endpoint=https://nugp-demo.niua.org/
   filestore_beanname: microDiskFileStoreService
+  
 
 
 # nlp-engine >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
