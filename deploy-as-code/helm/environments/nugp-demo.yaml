@@ -1006,6 +1006,12 @@ egov-finance:
   dev_mode: true
   filestore_beanname: microDiskFileStoreService
 
+  microservice: |
+    egov.default.services.endpoint=https://nugp-demo.niua.org/
+    indexer.host=http://egov-indexer.egov:8080/
+    egov.services.egov-indexer.url=egov-indexer/index-operations/{edcr-create-application}/_index
+    edcr.indexer.data.push.required=true
+
 
 # nlp-engine >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 nlp-engine:
