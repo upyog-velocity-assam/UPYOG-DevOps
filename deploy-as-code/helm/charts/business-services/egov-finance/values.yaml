@@ -224,7 +224,7 @@ payment-gatway-credential: |
 
 microservice: |
   egov.collection.version={{ index .Values "collection-version" }}
-  egov.default.services.endpoint=https://egov-micro-dev.egovernments.org/
+  egov.default.services.endpoint=https://nugp-demo.niua.org/
   egov.hrms.service.endpoint=http://egov-hrms.egov:8080/
   egov.accesscontrol.service.endpoint=http://egov-accesscontrol.egov:8080/
   egov.hr.masters.service.endpoint=http://hr-masters.egov:8080/
