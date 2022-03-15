@@ -24,6 +24,9 @@ replicas: "1"
 appType: "java-spring"
 tracing-enabled: true
 
+min-pool-connection: "10"
+max-pool-connection: "10"
+
 # Additional Container Envs
 env: |
   - name: DB_HOST
