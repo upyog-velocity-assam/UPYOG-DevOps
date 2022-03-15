@@ -50,7 +50,7 @@ env: |
         name: db
         key: password
   - name: DB_SSL
-    value: "true"                
+    value: "false"                
   - name: EGOV_BILLINGSERVICE_HOST
     valueFrom:
       configMapKeyRef:
