@@ -962,11 +962,7 @@ minio:
       - volumeId: "vol-0acd0f8ee63da108f"
         zone: ap-south-1b  
   ingress:
-    hostName: minio-nugp-demo.digit.org       
-microservice: |
-  indexer.host=http://egov-indexer.egov:8080/
-  egov.services.egov-indexer.url=egov-indexer/index-operations/{edcr-create-application}/_index
-  edcr.indexer.data.push.required=true
+    hostName: minio-nugp-demo.digit.org      
   
 ws-services:
   is-external-workflow-enabled: "true"
@@ -979,7 +975,12 @@ egov-edcr:
     enabled: true
     zuul: true
     context: "edcr"
-
+microservice: |
+  indexer.host=http://egov-indexer.egov:8080/
+  egov.services.egov-indexer.url=egov-indexer/index-operations/{edcr-create-application}/_index
+  edcr.indexer.data.push.required=true
+  ms.url=http://egov-filestore.egov:8080/
+  filestoreservice.beanname=egovMicroServiceStore
 # eGov-eDCR Tenants
 edcrTenants: |
   common.domain.name=nugp-demo.niua.org
@@ -1005,12 +1006,8 @@ financeTenants: |
 egov-finance:
   dev_mode: true
   filestore_beanname: microDiskFileStoreService
-
   microservice: |
     egov.default.services.endpoint=https://nugp-demo.niua.org/
-    indexer.host=http://egov-indexer.egov:8080/
-    egov.services.egov-indexer.url=egov-indexer/index-operations/{edcr-create-application}/_index
-    edcr.indexer.data.push.required=true
     egov.collection.version={{ index .Values "collection-version" }}
     egov.hrms.service.endpoint=http://egov-hrms.egov:8080/
     egov.accesscontrol.service.endpoint=http://egov-accesscontrol.egov:8080/
