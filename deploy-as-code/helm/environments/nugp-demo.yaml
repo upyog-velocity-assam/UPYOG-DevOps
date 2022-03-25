@@ -1,5 +1,5 @@
 global:
-  domain: nugp-demo.niua.org
+  domain: upyog.niua.org
   tracing-enabled: true
 
 cluster-configs:
