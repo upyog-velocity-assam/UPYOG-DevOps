@@ -993,11 +993,11 @@ edcrTenants: |
   
 # eGov-finance Tenants
 financeTenants: |
-  tenant.citya.niua.org=citya
-  tenant.cityb.niua.org=cityb
-  tenant.cityc.niua.org=cityc
-  tenant.cityd.niua.org=cityd
-  tenant.citye.niua.org=citye
+  tenant.citya.upyog.niua.org=citya
+  tenant.cityb.upyog.niua.org=cityb
+  tenant.cityc.upyog.niua.org=cityc
+  tenant.cityd.upyog.niua.org=cityd
+  tenant.citye.upyog.niua.org=citye
   location.user.role=Collection Operator
   collection.debitaccounthead.client.impl.class=org.egov.collection.integration.services.DebitAccountHeadDetailsServiceImpl
 
