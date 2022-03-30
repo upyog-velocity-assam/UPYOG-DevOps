@@ -526,7 +526,7 @@ collection-receipt-voucher-consumer:
 
 finance-collections-voucher-consumer:
   erp-env-name: ""
-  erp-domain-name: "niua.org"
+  erp-domain-name: "upyog.niua.org"
 
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
