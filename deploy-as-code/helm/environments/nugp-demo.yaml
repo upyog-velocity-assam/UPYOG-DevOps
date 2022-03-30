@@ -461,7 +461,7 @@ cert-manager:
   namespace: egov
 
 egov-custom-consumer:
-  erp-host: "https://citya.niua.org/"
+  erp-host: "https://citya.upyog.niua.org/"
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 # financials >>>>>>>>>>>>>>>>>>>>>>>>>>>>
