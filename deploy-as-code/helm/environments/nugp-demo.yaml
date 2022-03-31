@@ -461,7 +461,7 @@ cert-manager:
   namespace: egov
 
 egov-custom-consumer:
-  erp-host: "https://citya.upyog.niua.org/"
+  erp-host: "https://citya-upyog.niua.org/"
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 # financials >>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -525,8 +525,8 @@ collection-receipt-voucher-consumer:
 
 
 finance-collections-voucher-consumer:
-  erp-env-name: ""
-  erp-domain-name: "upyog.niua.org"
+  erp-env-name: "upyog"
+  erp-domain-name: "niua.org"
 
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
@@ -993,11 +993,11 @@ edcrTenants: |
   
 # eGov-finance Tenants
 financeTenants: |
-  tenant.citya.upyog.niua.org=citya
-  tenant.cityb.upyog.niua.org=cityb
-  tenant.cityc.upyog.niua.org=cityc
-  tenant.cityd.upyog.niua.org=cityd
-  tenant.citye.upyog.niua.org=citye
+  tenant.citya-upyog.niua.org=citya
+  tenant.cityb-upyog.niua.org=cityb
+  tenant.cityc-upyog.niua.org=cityc
+  tenant.cityd-upyog.niua.org=cityd
+  tenant.citye-upyog.niua.org=citye
   location.user.role=Collection Operator
   collection.debitaccounthead.client.impl.class=org.egov.collection.integration.services.DebitAccountHeadDetailsServiceImpl
 
