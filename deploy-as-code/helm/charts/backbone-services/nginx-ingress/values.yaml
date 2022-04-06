@@ -50,7 +50,9 @@ controller:
 
   custom-headers: 
     Strict-Transport-Security: "max-age=63072000; includeSubdomains; preload"
-    X-Frame-Options: "sameorigin"
+    #X-Frame-Options: "sameorigin"
+    frame-src: *.niua.org
+    frame-ancestors: *.niua.org
     X-Content-Type-Options: "nosniff"
     X-Download-Options: "noopen"
     Content-Security-Policy: "default-src 'self' https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'; img-src 'self' https: data: blob:; style-src https: blob: 'unsafe-inline'; worker-src 'self' blob:; font-src 'self' https: data: blob:; child-src 'self' https: data: blob:;"
