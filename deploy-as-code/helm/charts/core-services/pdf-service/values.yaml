@@ -37,9 +37,9 @@ persistence:
     size: "1Gi"
 
 
-extraVolumeMounts: |
-  - mountPath: /mnt/pdf
-    name: data
+#extraVolumeMounts: |
+#  - mountPath: /mnt/pdf
+#    name: data
 
 # Additional Container Envs
 env: |
