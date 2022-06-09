@@ -120,6 +120,26 @@ env: |
       secretKeyRef:
         name: egov-pg-service
         key: axismerchantpwd
+  - name: PAYGOV_MERCHANT_ID
+    valueFrom:
+      secretKeyRef:
+        name: egov-pg-service
+        key: paygovmerchantid
+  - name: PAYGOV_MERCHANT_SECRET_KEY
+    valueFrom:
+      secretKeyRef:
+        name: egov-pg-service
+        key: paygovmerchantsecretkey
+  - name: PAYGOV_MERCHANT_USER
+    valueFrom:
+      secretKeyRef:
+        name: egov-pg-service
+        key: paygovmerchantuser
+  - name: PAYGOV_MERCHANT_PWD
+    valueFrom:
+      secretKeyRef:
+        name: egov-pg-service
+        key: paygovmerchantpwd
   - name: AXIS_MERCHANT_ACCESS_CODE
     valueFrom:
       secretKeyRef:
