@@ -308,6 +308,7 @@ egov-indexer:
 
 egov-pg-service:
   axis: true
+  paygov: true
   egov-pg-reconciliation-system-user-uuid: "18a32260-1861-4426-9fbb-64dc207d54f3"
 
 egov-persister:
