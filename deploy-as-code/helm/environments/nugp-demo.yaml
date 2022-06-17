@@ -201,7 +201,7 @@ egov-notification-sms:
   sms-config-map: "{'username':'$username', 'pin': '$password', 'signature':'$senderid', 'mnumber':'$mobileno', 'message':'$message', 'smsservicetype':'unicodemsg', 'myParam': '$extraParam' , 'messageType': '$mtype'}"
   sms-gateway-to-use: "NIC"
   sms-sender: "IUPYOG"
-  sms.senderid: "1205165035867165760"
+  sms.senderid: "IUPYOG"
   sms-sender-requesttype: "GET"
   sms-custom-config: "true"
   sms-extra-req-params: "mtype=N&DR=Y"
