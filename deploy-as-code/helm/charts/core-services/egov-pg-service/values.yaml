@@ -28,6 +28,7 @@ healthChecks:
 appType: "java-spring"
 tracing-enabled: true
 axis: true
+paygov: true
 payu-url: ""
 payu-url-status: ""
 ccavenue-status-access-code: ""
@@ -200,12 +201,12 @@ env: |
     valueFrom:
       secretKeyRef:
         name: egov-pg-service
-        key: paygovmerchantid
+        key: paygov-merchant-id
   - name: PAYGOV_MERCHANT_SECRET_KEY
     valueFrom:
       secretKeyRef:
         name: egov-pg-service
-        key: paygovmerchantsecretkey
+        key: paygov-merchant-secret-key
   - name: PAYGOV_MERCHANT_USER
     valueFrom:
       secretKeyRef:
