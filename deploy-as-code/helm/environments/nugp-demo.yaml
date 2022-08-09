@@ -946,7 +946,7 @@ oauth2-proxy:
   config:
     configFile: |-
       email_domains = [ "*" ]
-      github_org = "nugp-digit"
+      github_org = "upyog"
       github_team = "nugp-team,devops"
       upstreams = [ "file:///dev/null" ]
 
