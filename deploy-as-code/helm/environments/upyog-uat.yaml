@@ -705,11 +705,11 @@ kafka-v2:
   persistence:
     enabled: true
     aws:
-      - volumeId: "vol-048d8d84fc099a2ca"
+      - volumeId: "vol-0fc603fc651ede8d5"
         zone: ap-south-1b
-      - volumeId: "vol-09f08571dbb28113d"
+      - volumeId: "vol-0088296032b8d8b24"
         zone: ap-south-1b
-      - volumeId: "vol-00b9499d2dbf75998"
+      - volumeId: "vol-06b550a29b1c23470"
         zone: ap-south-1b
   zookeeperHosts: "zookeeper-v2.zookeeper-cluster:2181/kafka-v2"
 
@@ -751,11 +751,11 @@ zookeeper-v2:
   persistence:
     enabled: true
     aws:
-      - volumeId: "vol-0dbd7a23e90fc5c19"
+      - volumeId: "vol-0f5721a840123daf9"
         zone: ap-south-1b
-      - volumeId: "vol-0bca87dbb8fb930f2"
+      - volumeId: "vol-065706dfce5697afa"
         zone: ap-south-1b
-      - volumeId: "vol-0255c727d62207956"
+      - volumeId: "vol-0080cc7b259248f86"
         zone: ap-south-1b
 
   ## Zookeeper JVM Heap Option
@@ -781,7 +781,7 @@ elasticsearch-data-v1:
   persistence:
     enabled: true
     aws:
-      - volumeId: "vol-04b33e85cd9368d7f"
+      - volumeId: "vol-088ce0ae68f786574"
         zone: ap-south-1b
       - volumeId: "vol-00e9a14e26f54a496"
         zone: ap-south-1b
@@ -826,11 +826,11 @@ elasticsearch-master-v1:
   persistence:
     enabled: true
     aws:
-      - volumeId: "vol-0fc7c6c44edbf99db"
+      - volumeId: "vol-0aa194dbd7217a70e"
         zone: ap-south-1b
-      - volumeId: "vol-0d7a9d43a3cda1d45"
+      - volumeId: "vol-03d6cf78ee072a677"
         zone: ap-south-1b
-      - volumeId: "vol-01a7e4a97bb1bce56"
+      - volumeId: "vol-027b00e4016d675fc"
         zone: ap-south-1b
 
   esJavaOpts: "-Xmx448m -Xms448m"
