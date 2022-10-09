@@ -1,5 +1,5 @@
 global:
-  domain: upyog.niua.org
+  domain: upyog-uat.niua.org
   tracing-enabled: true
 
 cluster-configs:
