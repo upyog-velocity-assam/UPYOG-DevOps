@@ -368,8 +368,8 @@ controller:
       namespaceSelector: {}
       # Default: scrape .Release.Namespace only
       # To scrape all, use the following:
-       namespaceSelector:
-         any: true
+       #namespaceSelector:
+         #any: true
       scrapeInterval: 2m
       # honorLabels: true
 
