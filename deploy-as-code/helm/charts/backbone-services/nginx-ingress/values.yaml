@@ -363,7 +363,7 @@ controller:
 
     serviceMonitor:
       enabled: false
-      #additionalLabels: {}
+      additionalLabels: {}
       namespace: ""
       namespaceSelector: {}
       # Default: scrape .Release.Namespace only
