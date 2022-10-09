@@ -361,16 +361,16 @@ controller:
       servicePort: 9913
       type: ClusterIP
 
-    serviceMonitor:
-      enabled: false
-      additionalLabels: {}
-      namespace: ""
-      namespaceSelector: {}
+    #serviceMonitor:
+     # enabled: false
+      #additionalLabels: {}
+      #namespace: ""
+     # namespaceSelector: {}
       # Default: scrape .Release.Namespace only
       # To scrape all, use the following:
       # namespaceSelector:
       #   any: true
-      scrapeInterval: 2m
+     # scrapeInterval: 2m
       # honorLabels: true
 
     prometheusRule:
