@@ -1,5 +1,5 @@
 global:
-  domain: upyog-uat.niua.org
+  domain: nugp-uat.ddns.net
   tracing-enabled: true
 
 cluster-configs:
