@@ -456,7 +456,7 @@ nginx-ingress:
     metrics:
       enabled: true
       serviceMonitor:
-        enabled: true
+        enabled: false
     service:
       annotations: 
         service.beta.kubernetes.io/aws-load-balancer-type: nlb           
