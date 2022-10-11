@@ -781,6 +781,7 @@ elasticsearch-data-v1:
   image:
     tag: 6.6.2
   persistence:
+    dataDirSize: "25Gi"
     enabled: true
     aws:
       - volumeId: "vol-04b33e85cd9368d7f"
@@ -807,7 +808,7 @@ elasticsearch-data-infra-v1:
     aws:
       - volumeId: "vol-0063bb1a880a24d1a"
         zone: ap-south-1b
-      - volumeId: "vol-07e23189b1e346e7b"
+      - volumeId: "vol-0c7e9cdbcc848fef8"
         zone: ap-south-1b
       - volumeId: "vol-09908c2601be1c931"
         zone: ap-south-1b
