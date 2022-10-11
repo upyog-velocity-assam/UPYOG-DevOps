@@ -30,13 +30,13 @@ cluster-configs:
   configmaps:
     egov-config:
       data:
-        db-host: "postgres.egov"
-        db-name: "nugp_db"
-        db-url: "jdbc:postgresql://postgres.egov:5432/nugp_db"
-        bpa-db-url: "jdbc:postgresql://postgres.egov:5432/bpa_demo_db"
-        erp-db-url: "jdbc:postgresql://postgres.egov:5432/finance_demo_db"
-        domain: "upyog.niua.org"
-        egov-services-fqdn-name: "https://upyog.niua.org/"
+        db-host: "upyog-uat-db.cmqlydmcmpru.ap-south-1.rds.amazonaws.com"
+        db-name: "upyog_db"
+        db-url: "jdbc:postgresql://upyog-uat-db.cmqlydmcmpru.ap-south-1.rds.amazonaws.com:5432/upyog_db"
+        bpa-db-url: "jdbc:postgresql://upyog-uat-db.cmqlydmcmpru.ap-south-1.rds.amazonaws.com:5432/bpa_uat_db"
+        erp-db-url: "jdbc:postgresql://upyog-uat-db.cmqlydmcmpru.ap-south-1.rds.amazonaws.com:5432/finance_uat_db"
+        domain: "nugp-uat.ddns.net"
+        egov-services-fqdn-name: "https://nugp-uat.ddns.net/"
         egov-state-level-tenant-id: "pg"
         es-host: "elasticsearch-data-v1.es-cluster"
         es-indexer-host: "http://elasticsearch-data-v1.es-cluster:9200/"
