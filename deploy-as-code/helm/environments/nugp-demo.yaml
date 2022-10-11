@@ -786,8 +786,8 @@ elasticsearch-data-v1:
     aws:
       - volumeId: "vol-04b33e85cd9368d7f"
         zone: ap-south-1b
-      - volumeId: "vol-076e99763d6246d7d"
-        zone: ap-south-1a
+      - volumeId: "vol-00e9a14e26f54a496"
+        zone: ap-south-1b
       - volumeId: "vol-0ab675dc3fcfa2cd8"
         zone: ap-south-1b
 
