@@ -781,6 +781,7 @@ elasticsearch-data-v1:
   image:
     tag: 6.6.2
   persistence:
+    dataDirSize: "25Gi"
     enabled: true
     aws:
       - volumeId: "vol-04b33e85cd9368d7f"
