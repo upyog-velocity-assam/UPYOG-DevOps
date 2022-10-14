@@ -86,6 +86,8 @@ env: |
     value: {{ index .Values "sms-extra-req-params" | quote }}
   - name: SMS_VERIFY_SSL
     value: "false"
+  - name: SMS_VERIFY_CERTIFCATE
+    value: "true"
   - name: SMS_URL_DONT_ENCODE_URL
     value: "true"
   {{- end }}
