@@ -38,7 +38,7 @@ persistence:
     volumeId: "vol-07f28c02de2af64ef"
   storageClassName: default
   accessMode: ReadWriteOnce
-  dataDirSize: 100Gi 
+  dataDirSize: 20Gi 
   volumeMode: Filesystem
 
 extraVolumeMounts: |
