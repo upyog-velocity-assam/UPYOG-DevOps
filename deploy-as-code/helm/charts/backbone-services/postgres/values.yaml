@@ -30,7 +30,7 @@ env: |
   - name: POSTGRES_DB
     value: {{ default "" .Values.postgresDatabase | quote }}
 
-postgresDatabase: fsm_uat_db
+postgresDatabase: upyog_db
 
 persistence:
   enabled: true
@@ -38,7 +38,7 @@ persistence:
     volumeId: "vol-07f28c02de2af64ef"
   storageClassName: default
   accessMode: ReadWriteOnce
-  dataDirSize: 20Gi 
+  dataDirSize: 100Gi 
   volumeMode: Filesystem
 
 extraVolumeMounts: |
