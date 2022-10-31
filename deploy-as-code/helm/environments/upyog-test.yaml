@@ -479,7 +479,7 @@ egf-masters:
   memory_limits: 512Mi
 
 egf-master:
-  db-url: "jdbc:postgresql://postgres.egov:5432/nugp_db"
+  db-url: "jdbc:postgresql://postgres.egov:5432/upyog_db"
   memory_limits: 512Mi
   heap: "-Xmx256m -Xms256m"
 
