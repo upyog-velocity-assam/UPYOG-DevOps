@@ -35,7 +35,7 @@ postgresDatabase: upyog_db
 persistence:
   enabled: true
   aws:
-    volumeId: "vol-07f28c02de2af64ef"
+    volumeId: "vol-0a858323ed5734e09"
   storageClassName: default
   accessMode: ReadWriteOnce
   dataDirSize: 20Gi 
