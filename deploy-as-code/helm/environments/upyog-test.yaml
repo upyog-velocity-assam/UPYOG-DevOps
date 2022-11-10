@@ -1,5 +1,5 @@
 global:
-  domain: nugp-uat.ddns.net
+  domain: upyog-test.niua.org
   tracing-enabled: true
 
 cluster-configs:
@@ -35,8 +35,8 @@ cluster-configs:
         db-url: "jdbc:postgresql://postgres.egov:5432/upyog_test_db"
         bpa-db-url: "jdbc:postgresql://postgres.egov:5432/bpa_test_db"
         erp-db-url: "jdbc:postgresql://postgres.egov:5432/finance_test_db"
-        domain: "nugp-uat.ddns.net"
-        egov-services-fqdn-name: "https://nugp-uat.ddns.net/"
+        domain: "upyog-test.niua.org"
+        egov-services-fqdn-name: "https://upyog-test.niua.org/"
         egov-state-level-tenant-id: "pg"
         es-host: "elasticsearch-data-v1.es-cluster"
         es-indexer-host: "http://elasticsearch-data-v1.es-cluster:9200/"
@@ -146,7 +146,7 @@ cluster-configs:
         sw-calculator: "http://sw-calculator.egov:8080/"
         noc-services: "http://noc-services.egov:8080/"
         land-services: "http://land-services.egov:8080/"
-        minio-url: "https://minio-uat.digit.org/"
+        minio-url: "https://minio-test.digit.org/"
         egov-user-chatbot: "http://egov-user-chatbot:8080/"
         zuul: "http://zuul:8080/"
         egov-url-shortening: "http://egov-url-shortening:8080/"
@@ -184,7 +184,7 @@ egov-filestore:
   minio.url : "http://minio.backbone:9000/"
   is-s3-enabled: "true"
   minio-enabled: false
-  fixed-bucketname: upyog-uat-assets
+  fixed-bucketname: upyog-test-assets
   allowed-file-formats-map: "{jpg:{'image/jpg','image/jpeg'},jpeg:{'image/jpeg','image/jpg'},png:{'image/png'},pdf:{'application/pdf'},odt:{'application/vnd.oasis.opendocument.text'},ods:{'application/vnd.oasis.opendocument.spreadsheet'},docx:{'application/x-tika-msoffice','application/x-tika-ooxml','application/vnd.oasis.opendocument.text'},doc:{'application/x-tika-msoffice','application/x-tika-ooxml','application/vnd.oasis.opendocument.text'},dxf:{'text/plain','application/octet-stream','image/vnd.dxf','image/vnd.dxf; format=ascii','image/vnd.dxf; format=binary','image/vnd.dxb'},csv:{'text/plain'},txt:{'text/plain'}}"
   allowed-file-formats: "jpg,jpeg,png,doc,docx,pdf,odt,ods,text,dxf"
   filestore-url-validity: 3600
@@ -526,11 +526,11 @@ collection-services:
   user-create-enabled: "true"
 
 collection-receipt-voucher-consumer:
-  citya-erp-host: "https://citya-uat.egovernments.org/"
-  cityb-erp-host: "https://cityb-uat.egovernments.org/"
-  cityc-erp-host: "https://cityc-uat.egovernments.org/"
-  cityd-erp-host: "https://cityd-uat.egovernments.org/"
-  citye-erp-host: "https://citye-uat.egovernments.org/"
+  citya-erp-host: "https://citya-test.egovernments.org/"
+  cityb-erp-host: "https://cityb-test.egovernments.org/"
+  cityc-erp-host: "https://cityc-test.egovernments.org/"
+  cityd-erp-host: "https://cityd-test.egovernments.org/"
+  citye-erp-host: "https://citye-test.egovernments.org/"
 
 
 
