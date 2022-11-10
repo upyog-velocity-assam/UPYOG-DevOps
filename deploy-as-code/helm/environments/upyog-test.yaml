@@ -31,8 +31,8 @@ cluster-configs:
     egov-config:
       data:
         db-host: "postgres.egov"
-        db-name: "upyog_db"
-        db-url: "jdbc:postgresql://postgres.egov:5432/upyog_db"
+        db-name: "upyog_test_db"
+        db-url: "jdbc:postgresql://postgres.egov:5432/upyog_test_db"
         bpa-db-url: "jdbc:postgresql://postgres.egov:5432/bpa_test_db"
         erp-db-url: "jdbc:postgresql://postgres.egov:5432/finance_test_db"
         domain: "nugp-uat.ddns.net"
@@ -479,7 +479,7 @@ egf-masters:
   memory_limits: 512Mi
 
 egf-master:
-  db-url: "jdbc:postgresql://postgres.egov:5432/upyog_db"
+  db-url: "jdbc:postgresql://postgres.egov:5432/upyog_test_db"
   memory_limits: 512Mi
   heap: "-Xmx256m -Xms256m"
 
