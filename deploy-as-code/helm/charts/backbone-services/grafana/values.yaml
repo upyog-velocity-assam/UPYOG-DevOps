@@ -17,7 +17,7 @@ ingress:
 initContainers:
   gitSync:
     enabled: true
-    repo: "git@github.com:upyog/upyog-configs.git"
+    repo: "git@github.com:egovernments/configs"
     branch: "master"
 
 # Container Configs
