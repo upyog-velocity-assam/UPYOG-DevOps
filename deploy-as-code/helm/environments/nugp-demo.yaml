@@ -420,6 +420,7 @@ citizen:
       ';"
 
 dashboard-analytics:
+  replicas: 2
   config-schema-paths: "file:///work-dir/upyog-configs/configs/egov-dss-dashboards/dashboard-analytics/*.json"  
   initContainers:
     gitSync:
@@ -436,6 +437,8 @@ dashboard-ingest:
       repo: "git@github.com:upyog/upyog-configs"
       branch: "master"
 
+dss-dashboard:
+  replicas: 2
 dashboard:
   custom-js-injection: |
     sub_filter.conf: "
