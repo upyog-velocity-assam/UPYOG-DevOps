@@ -1,5 +1,5 @@
 global:
-  domain: niua-dev.ddns.net
+  domain: upyog-dev.niua.org
   tracing-enabled: true
 
 cluster-configs:
@@ -35,8 +35,8 @@ cluster-configs:
         db-url: "jdbc:postgresql://postgres.egov:5432/upyog_db"
         bpa-db-url: "jdbc:postgresql://postgres.egov:5432/bpa_dev_db"
         erp-db-url: "jdbc:postgresql://postgres.egov:5432/finance_dev_db"
-        domain: "niua-dev.ddns.net"
-        egov-services-fqdn-name: "https://nugp-uat.ddns.net/"
+        domain: "upyog-dev.niua.org"
+        egov-services-fqdn-name: "https://upyog-dev.niua.org/"
         egov-state-level-tenant-id: "pg"
         es-host: "elasticsearch-data-v1.es-cluster"
         es-indexer-host: "http://elasticsearch-data-v1.es-cluster:9200/"
