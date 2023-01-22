@@ -946,7 +946,7 @@ oauth2-proxy:
     configFile: |-
       email_domains = [ "*" ]
       github_org = "upyog"
-      github_team = "nugp-team,devops"
+      github_team = "nugp-team,devops,Upyog-test"
       upstreams = [ "file:///dev/null" ]
 grafana:
   initContainers:
