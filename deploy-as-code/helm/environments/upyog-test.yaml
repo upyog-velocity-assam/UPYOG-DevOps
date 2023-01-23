@@ -729,11 +729,11 @@ kafka-v2-infra:
   persistence:
     enabled: true
     aws:
-      - volumeId: "vol-0f14905379c2edfb4"
+      - volumeId: "vol-0b74bdcc9a1eff18d"
         zone: ap-south-1b
-      - volumeId: "vol-08a267e79fb55412e"
+      - volumeId: "vol-0945274b6e6d4bbec"
         zone: ap-south-1b
-      - volumeId: "vol-0774809ce88409255"
+      - volumeId: "vol-06eac7b81e4fe2ade"
         zone: ap-south-1b
   zookeeperHosts: "zookeeper-v2.zookeeper-cluster:2181/kafka-v2-infra"
 
@@ -804,11 +804,11 @@ elasticsearch-data-infra-v1:
   persistence:
     enabled: true
     aws:
-      - volumeId: "vol-0063bb1a880a24d1a"
+      - volumeId: "vol-0a962d460602df715"
         zone: ap-south-1b
-      - volumeId: "vol-07e23189b1e346e7b"
+      - volumeId: "vol-0489b3fe497bdb046"
         zone: ap-south-1b
-      - volumeId: "vol-09908c2601be1c931"
+      - volumeId: "vol-09f481226701696b8"
         zone: ap-south-1b
 
   esJavaOpts: "-Xmx1g -Xms1g"
