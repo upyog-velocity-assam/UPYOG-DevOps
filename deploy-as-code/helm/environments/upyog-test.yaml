@@ -827,11 +827,11 @@ elasticsearch-master-v1:
   persistence:
     enabled: true
     aws:
-      - volumeId: "vol-07a677a58a94b9966"
+      - volumeId: "vol-022a142160ea3b5d4"
         zone: ap-south-1b
-      - volumeId: "vol-0a0c6807e03c0ccdf"
+      - volumeId: "vol-04c74440257f43c9e"
         zone: ap-south-1b
-      - volumeId: "vol-0375e602a45df4bda"
+      - volumeId: "vol-013961865aa1e865b"
         zone: ap-south-1b
 
   esJavaOpts: "-Xmx448m -Xms448m"
