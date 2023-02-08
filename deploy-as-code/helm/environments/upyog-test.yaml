@@ -782,11 +782,11 @@ elasticsearch-data-v1:
   persistence:
     enabled: true
     aws:
-      - volumeId: "vol-021d0b99ce044dac1"
+      - volumeId: "vol-0a4dc547ad2c08894"
         zone: ap-south-1b
-      - volumeId: "vol-0842a2c4f40ce4b3b"
+      - volumeId: "vol-0c04aa2bde8240d33"
         zone: ap-south-1b
-      - volumeId: "vol-08a95913a92f334eb"
+      - volumeId: "vol-07e1fbc3c7c7206d0"
         zone: ap-south-1b
 
   esJavaOpts: "-Xmx1g -Xms1g"
@@ -827,11 +827,11 @@ elasticsearch-master-v1:
   persistence:
     enabled: true
     aws:
-      - volumeId: "vol-022a142160ea3b5d4"
+      - volumeId: "vol-0636241a99c115c0d"
         zone: ap-south-1b
-      - volumeId: "vol-04c74440257f43c9e"
+      - volumeId: "vol-08fb78c14d43b48b9"
         zone: ap-south-1b
-      - volumeId: "vol-013961865aa1e865b"
+      - volumeId: "vol-091f7cb3b02bed4bc"
         zone: ap-south-1b
 
   esJavaOpts: "-Xmx448m -Xms448m"
