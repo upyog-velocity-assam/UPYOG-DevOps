@@ -3,7 +3,8 @@ creation_rules:
         # upon creation of a file that matches the pattern *dev.yaml,
         # KMS set A is used
         # NUGP Internal ------------------------------------------------------------------------------------------------------------- #
-        - path_regex: environments/nugp\-demo\-secrets\.yaml$
+        #- path_regex: environments/nugp\-demo\-secrets\.yaml$.
+        - path_regex: environments/upyog\-sandbox\-secrets\.yaml$
           kms: 'arn:aws:kms:ap-south-1:218381940040:key/e0b974a0-3640-424a-a7fb-c76331d0fa0b'
         #- path_regex: environments/upyog\-sandbox\-secrets\.yaml$  
          # kms: 'arn:aws:kms:ap-south-1:456677218055:key/11647c2f-96d5-4ed5-ab65-9c5b8e3de46b'      
