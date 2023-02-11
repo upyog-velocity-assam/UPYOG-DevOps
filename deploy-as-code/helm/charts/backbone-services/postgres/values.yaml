@@ -12,7 +12,7 @@ httpPort: 5432
 resources: |
   requests:
     cpu: 100m
-    memory: 256Mi
+    memory: 356Mi
 
 tracing-enabled: false
 
@@ -30,7 +30,7 @@ env: |
   - name: POSTGRES_DB
     value: {{ default "" .Values.postgresDatabase | quote }}
 
-postgresDatabase: fsm_uat_db
+postgresDatabase: upyog_sandbox_db
 
 persistence:
   enabled: true
