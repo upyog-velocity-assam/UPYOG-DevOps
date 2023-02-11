@@ -35,7 +35,7 @@ postgresDatabase: fsm_uat_db
 persistence:
   enabled: true
   aws:
-    volumeId: "vol-0f365193d57191721"
+    volumeId: "vol-029ca07a669ede3e2"
   storageClassName: gp2
   accessMode: ReadWriteOnce
   dataDirSize: 100Gi 
