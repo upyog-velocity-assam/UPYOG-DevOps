@@ -1,5 +1,5 @@
 global:
-  domain: sandbox-niua.ddns.net
+  domain: upyog-sandbox.niua.org
   tracing-enabled: true
 
 cluster-configs:
@@ -35,8 +35,8 @@ cluster-configs:
         db-url: "jdbc:postgresql://postgres.egov:5432/upyog_sandbox_db"
         bpa-db-url: "jdbc:postgresql://postgres.egov:5432/bpa_sandbox_db"
         erp-db-url: "jdbc:postgresql://postgres.egov:5432/finance_sandbox_db"
-        domain: "sandbox-niua.ddns.net"
-        egov-services-fqdn-name: "https://sandbox-niua.ddns.net/"
+        domain: "upyog-sandbox.niua.org"
+        egov-services-fqdn-name: "https://upyog-sandbox.niua.org/"
         egov-state-level-tenant-id: "pg"
         es-host: "elasticsearch-data-v1.es-cluster"
         es-indexer-host: "http://elasticsearch-data-v1.es-cluster:9200/"
@@ -990,7 +990,7 @@ microservice: |
   filestoreservice.beanname=egovMicroServiceStore
 # eGov-eDCR Tenants
 edcrTenants: |
-  common.domain.name=upyog.niua.org
+  common.domain.name=upyog-sandbox.niua.org
   tenant.upyog.niua.org=state
   client.id=pg
   tenant.citya.upyog.niua.org=citya
@@ -1013,7 +1013,7 @@ egov-finance:
   dev_mode: true
   filestore_beanname: microDiskFileStoreService
   microservice: |
-    egov.default.services.endpoint=https://upyog.niua.org/
+    egov.default.services.endpoint=https://upyog-sandbox.niua.org/
     egov.collection.version={{ index .Values "collection-version" }}
     egov.hrms.service.endpoint=http://egov-hrms.egov:8080/
     egov.accesscontrol.service.endpoint=http://egov-accesscontrol.egov:8080/
