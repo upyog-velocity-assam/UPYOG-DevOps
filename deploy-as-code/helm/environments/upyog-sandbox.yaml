@@ -1002,8 +1002,8 @@ edcrTenants: |
   
 # eGov-finance Tenants
 financeTenants: |
-  tenant.citya-upyog.niua.org=citya
-  tenant.cityb-upyog.niua.org=cityb
+  tenant.citya-upyog-sandbox.niua.org=citya
+  tenant.cityb-upyog-sandbox.niua.org=cityb
   tenant.cityc-upyog.niua.org=cityc
   tenant.cityd-upyog.niua.org=cityd
   tenant.citye-upyog.niua.org=citye
