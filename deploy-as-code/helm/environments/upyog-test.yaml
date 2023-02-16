@@ -418,6 +418,7 @@ citizen:
       <script src=https://s3.ap-south-1.amazonaws.com/in-egov-assets/globalConfigs.js type=text/javascript></script>
       <script src=https://s3.ap-south-1.amazonaws.com/egov-assets/ulb-overrides.js type=text/javascript></script>
       ';"
+
 dashboard-analytics:
     replicas: 2	
     heap: "-Xmx756m -Xms512m"
