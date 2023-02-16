@@ -420,8 +420,8 @@ citizen:
       ';"
 
 dashboard-analytics:
-    replicas: 2	
-    heap: "-Xmx756m -Xms512m"
+  replicas: 2	
+  heap: "-Xmx756m -Xms512m"
   config-schema-paths: "file:///work-dir/upyog-configs/configs/egov-dss-dashboards/dashboard-analytics/*.json"  
   initContainers:
     gitSync:
