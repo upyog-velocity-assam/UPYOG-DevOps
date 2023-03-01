@@ -59,6 +59,7 @@ cluster-configs:
         es-infra-host: "elasticsearch-data-v1.es-cluster"
         egov-bnd-freedownload-tenants: "pg.testing"
         egov-bnd-live-citizen-tenants: "pg.testing"
+        egov-internal-microservice-user-uuid: "d5b68591-5581-49bb-9433-48f8188de27b"
 
     egov-service-host:
       data:
