@@ -299,7 +299,7 @@ egov-mdms-service:
   initContainers:
     gitSync:
       repo: "git@github.com:upyog/upyog-mdms-data"
-      branch: "master"
+      branch: "2.8_upgrade"
   mdms-folder: "upyog-mdms-data"
   java-args: -Dspring.profiles.active=monitoring
   masters-config-url: "file:///work-dir/upyog-mdms-data/master-config.json"
