@@ -479,7 +479,7 @@ egf-masters:
   memory_limits: 512Mi
 
 egf-master:
-  db-url: "jdbc:postgresql://postgres.egov:5432/upyog_db"
+  db-url: "jdbc:postgresql://postgres.egov:5432/upyog_sandbox_db"
   memory_limits: 512Mi
   heap: "-Xmx256m -Xms256m"
 
@@ -509,14 +509,14 @@ zuul:
 # hr-2.0 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 hr-masters-v2:
-  db-url: "jdbc:postgresql://egov-dev-db.ctm6jbmr5mnj.ap-south-1.rds.amazonaws.com:5432/egov_staging_db?currentSchema=hr_masters_v2_schema"
+  db-url: "jdbc:postgresql://postgres.egov:5432/upyog_sandbox_db?currentSchema=hr_masters_v2_schema"
 
 hr-employee-v2:
-  db-url: "jdbc:postgresql://egov-dev-db.ctm6jbmr5mnj.ap-south-1.rds.amazonaws.com:5432/egov_staging_db?currentSchema=hr_employee_v2_schema"
+  db-url: "jdbc:postgresql://postgres.egov:5432/upyog_sandbox_db?currentSchema=hr_employee_v2_schema"
 
 # collections >>>>>>>>>>>>>>>>>>>>>>>>>>>
 collection-masters:
-  db-url: "jdbc:postgresql://egov-dev-db.ctm6jbmr5mnj.ap-south-1.rds.amazonaws.com:5432/egov_staging_db"
+  db-url: "jdbc:postgresql://postgres.egov:5432/upyog_sandbox_db"
 
 collection-services:
   receiptnumber-servicebased: "true"
