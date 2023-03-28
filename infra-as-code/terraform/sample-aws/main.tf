@@ -1,3 +1,11 @@
+terraform {
+  backend "s3" {
+    bucket = "ifix-dev-terraform-state-1"
+    key = "terraform"
+    region = "ap-south-1"
+  }
+}
+
 module "network" {
   source             = "../modules/kubernetes/aws/network"
   vpc_cidr_block     = "${var.vpc_cidr_block}"
