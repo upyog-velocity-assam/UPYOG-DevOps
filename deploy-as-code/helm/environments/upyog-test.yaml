@@ -484,7 +484,7 @@ egf-masters:
   memory_limits: 512Mi
 
 egf-master:
-  db-url: "jdbc:postgresql://postgres.egov:5432/upyog_test_db"
+  db-url: "jdbc:postgresql://upyog-test-rds.cmqlydmcmpru.ap-south-1.rds.amazonaws.com:5432/upyog_test_db"
   memory_limits: 512Mi
   heap: "-Xmx256m -Xms256m"
 
