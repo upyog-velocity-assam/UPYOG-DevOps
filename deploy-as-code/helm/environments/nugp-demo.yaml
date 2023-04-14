@@ -30,11 +30,11 @@ cluster-configs:
   configmaps:
     egov-config:
       data:
-        db-host: "postgres.egov"
+        db-host: "upyog-prod-rds.cmqlydmcmpru.ap-south-1.rds.amazonaws.com"
         db-name: "nugp_db"
-        db-url: "jdbc:postgresql://postgres.egov:5432/nugp_db"
-        bpa-db-url: "jdbc:postgresql://postgres.egov:5432/bpa_demo_db"
-        erp-db-url: "jdbc:postgresql://postgres.egov:5432/finance_demo_db"
+        db-url: "jdbc:postgresql://upyog-prod-rds.cmqlydmcmpru.ap-south-1.rds.amazonaws.com:5962/nugp_db"
+        bpa-db-url: "jdbc:postgresql://upyog-prod-rds.cmqlydmcmpru.ap-south-1.rds.amazonaws.com:5962/bpa_demo_db"
+        erp-db-url: "jdbc:postgresql://upyog-prod-rds.cmqlydmcmpru.ap-south-1.rds.amazonaws.com:5962/finance_demo_db"
         domain: "upyog.niua.org"
         egov-services-fqdn-name: "https://upyog.niua.org/"
         egov-state-level-tenant-id: "pg"
@@ -485,7 +485,7 @@ egf-masters:
   memory_limits: 512Mi
 
 egf-master:
-  db-url: "jdbc:postgresql://postgres.egov:5432/nugp_db"
+  db-url: "jdbc:postgresql://upyog-prod-rds.cmqlydmcmpru.ap-south-1.rds.amazonaws.com:5962/nugp_db"
   memory_limits: 512Mi
   heap: "-Xmx256m -Xms256m"
 
