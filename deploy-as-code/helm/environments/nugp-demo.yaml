@@ -690,6 +690,11 @@ jaeger:
             "service": "rainmaker-pgr",
             "type": "probabilistic",
             "param": 0.5
+          },
+          {
+            "service": "dashboard-analytics",
+            "type": "probabilistic",
+            "param": 0.5
           }
         ],
         "default_strategy": {
