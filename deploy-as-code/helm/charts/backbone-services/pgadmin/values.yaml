@@ -21,16 +21,16 @@ image:
 replicas: "1"
 httpPort: 8080
 serverBasePath: "/pgadmin"
-dbUrl: "upyog-test-rds.cmqlydmcmpru.ap-south-1.rds.amazonaws.com"
-environment: "test"
-maintenance-db-name: "upyog_test_db"           
+dbUrl: "upyog-prod-rds.cmqlydmcmpru.ap-south-1.rds.amazonaws.com"
+environment: "prod"
+maintenance-db-name: "nugp_db"           
 
 # Additional Container Envs
 env: |  
   - name: SERVER_HOST
     value: {{ .Values.dbUrl | quote }}     
   - name: SERVER_PORT
-    value: "5432" 
+    value: "5962" 
   - name: SERVER_MODE
     value: "False"         
   - name: SERVER_NAME
