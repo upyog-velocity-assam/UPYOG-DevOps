@@ -421,8 +421,8 @@ citizen:
 
 dashboard-analytics:
   replicas: 3
-  memory_limits: 1.5Gi
-  heap: "-Xmx1280m -Xms756m"
+  memory_limits: 2Gi
+  heap: "-Xmx1580m -Xms1024m"
   config-schema-paths: "file:///work-dir/upyog-configs/configs/egov-dss-dashboards/dashboard-analytics/*.json"  
   initContainers:
     gitSync:
