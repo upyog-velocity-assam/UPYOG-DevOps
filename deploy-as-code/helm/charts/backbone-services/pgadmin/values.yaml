@@ -21,10 +21,9 @@ image:
 replicas: "1"
 httpPort: 8080
 serverBasePath: "/pgadmin"
-#dbUrl: "egov-dev-db.ctm6jbmr5mnj.ap-south-1.rds.amazonaws.com"
-dburl: "postgres.egov"
-environment: "TEST"
-maintenance-db-name: "postgres"           
+dbUrl: "upyog-test-rds.cmqlydmcmpru.ap-south-1.rds.amazonaws.com"
+environment: "test"
+maintenance-db-name: "upyog_test_db"           
 
 # Additional Container Envs
 env: |  
