@@ -709,11 +709,11 @@ kafka-v2:
   persistence:
     enabled: true
     aws:
-      - volumeId: "vol-07290631ea49cb622"
+      - volumeId: "vol-02833eb5dc9ff30c3"
         zone: ap-south-1b
-      - volumeId: "vol-0ad5ce2fbe34ae7ba"
+      - volumeId: "vol-0b26722fd18ab770e"
         zone: ap-south-1b
-      - volumeId: "vol-005fe6e42b986414e"
+      - volumeId: "vol-0a7053575c75229b8"
         zone: ap-south-1b
   zookeeperHosts: "zookeeper-v2.zookeeper-cluster:2181/kafka-v2"
 
@@ -732,11 +732,11 @@ kafka-v2-infra:
   persistence:
     enabled: true
     aws:
-      - volumeId: "vol-0f14905379c2edfb4"
+      - volumeId: "vol-0ba5aa39e28119c22"
         zone: ap-south-1b
-      - volumeId: "vol-08a267e79fb55412e"
+      - volumeId: "vol-021caa654611bcf51"
         zone: ap-south-1b
-      - volumeId: "vol-0774809ce88409255"
+      - volumeId: "vol-0c956e41b2a5763ab"
         zone: ap-south-1b
   zookeeperHosts: "zookeeper-v2.zookeeper-cluster:2181/kafka-v2-infra"
 
@@ -755,11 +755,11 @@ zookeeper-v2:
   persistence:
     enabled: true
     aws:
-      - volumeId: "vol-0e78edddeb830e591"
+      - volumeId: "vol-0b1e4f3465874707b"
         zone: ap-south-1b
-      - volumeId: "vol-063f241df2f003742"
+      - volumeId: "vol-06d098c47fa5384b7"
         zone: ap-south-1b
-      - volumeId: "vol-0204c1e61a16e678f"
+      - volumeId: "vol-014294af42ef64619"
         zone: ap-south-1b
 
   ## Zookeeper JVM Heap Option
