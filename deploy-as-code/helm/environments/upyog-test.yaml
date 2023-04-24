@@ -756,11 +756,11 @@ zookeeper-v2:
   persistence:
     enabled: true
     aws:
-      - volumeId: "vol-0c7e5f105949b5f93"
+      - volumeId: "vol-02e916aa2d973ffc6"
         zone: ap-south-1b
-      - volumeId: "vol-0d06a1ba633701234"
+      - volumeId: "vol-0da62e697e93b0710"
         zone: ap-south-1b
-      - volumeId: "vol-0663458c421c4faae"
+      - volumeId: "vol-0cb6c51e7f0ce5306"
         zone: ap-south-1b
 
   ## Zookeeper JVM Heap Option
