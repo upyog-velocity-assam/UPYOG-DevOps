@@ -995,8 +995,8 @@ microservice: |
   filestoreservice.beanname=egovMicroServiceStore
 # eGov-eDCR Tenants
 edcrTenants: |
-  common.domain.name=upyog.niua.org
-  tenant.upyog.niua.org=state
+  common.domain.name=upyog-test.niua.org
+  tenant.upyog-test.niua.org=state
   client.id=pg
   tenant.citya.upyog-test.niua.org=citya
   tenant.cityb.upyog-test.niua.org=cityb
