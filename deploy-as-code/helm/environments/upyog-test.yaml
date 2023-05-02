@@ -426,7 +426,7 @@ dashboard-analytics:
   initContainers:
     gitSync:
       repo: "git@github.com:upyog/upyog-configs"
-      branch: "master"
+      branch: "dev"
 
 dashboard-ingest:
   topic-incoming-collection: "dss-collection-update"
