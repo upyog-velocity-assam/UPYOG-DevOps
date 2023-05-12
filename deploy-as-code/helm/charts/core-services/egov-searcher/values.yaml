@@ -37,7 +37,7 @@ env: |
     value: "false"  
   - name: MANAGEMENT_SECURITY_ENABLED
     value: "false" 
-    - name: EGOV_MDMS_HOST
+  - name: EGOV_MDMS_HOST
     valueFrom:
       configMapKeyRef:
         name: egov-service-host
