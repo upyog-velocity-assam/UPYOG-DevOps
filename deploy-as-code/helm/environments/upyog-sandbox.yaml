@@ -37,6 +37,7 @@ cluster-configs:
         erp-db-url: "jdbc:postgresql://postgres.egov:5432/finance_sandbox_db"
         domain: "upyog-sandbox.niua.org"
         egov-services-fqdn-name: "https://upyog-sandbox.niua.org/"
+        state-level-tenant-id: "pg"
         egov-state-level-tenant-id: "pg"
         es-host: "elasticsearch-data-v1.es-cluster"
         es-indexer-host: "http://elasticsearch-data-v1.es-cluster:9200/"
