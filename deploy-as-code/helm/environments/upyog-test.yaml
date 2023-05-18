@@ -2,6 +2,7 @@ global:
   domain: upyog-test.niua.org
   tracing-enabled: true
 
+
 cluster-configs:
   namespaces:
     create: false
