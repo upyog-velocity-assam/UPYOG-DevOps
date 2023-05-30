@@ -162,6 +162,7 @@ cluster-configs:
         pgr-services: "http://pgr-services.egov:8080/"
         birth-death-services: "http://birth-death-services.egov:8080/"
         egov-pdf: "http://egov-pdf.egov:8080/"
+        pt-services-dx: "http://pt-services-dx.egov:8080/"
 
 billing-service:
   memory_limits: 512Mi
