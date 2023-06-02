@@ -17,7 +17,7 @@ spec:
       - backend:
           service: 
             name: {{ .serviceName }}
-            Port: {{ .servicePort }}
+            port: {{ .servicePort }}
         path: /
         pathType: ImplementationSpecific
   tls:
