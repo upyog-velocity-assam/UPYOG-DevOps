@@ -1,6 +1,6 @@
 {{- $serviceName := include "nginx-ingress.name" . -}}
 {{- if and .Values.controller.metrics.enabled .Values.controller.metrics.serviceMonitor.enabled }}
-apiVersion: monitoring.coreos.com/v1
+apiVersion: monitoring.coreos.com/v1beta1
 kind: ServiceMonitor
 metadata:
   name: {{ template "nginx-ingress.controller.fullname" . }}
