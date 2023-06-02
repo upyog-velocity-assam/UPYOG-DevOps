@@ -14,12 +14,18 @@ spec:
   - host: {{ $.Values.global.domain }}
     http:
       paths:
-      - backend:
-          service: 
-            name: {{ .serviceName }}
-            port: {{ .servicePort }}
-        path: /
-        pathType: ImplementationSpecific
+        - path: /
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: {{ .serviceName }}
+                port: 
+                  number: {{ .servicePort }}
+      #- backend:
+         # service: 
+         #   port: {{ .servicePort }}
+       # path: /
+       # pathType: ImplementationSpecific
   tls:
   - hosts:
     - {{ $.Values.global.domain }}
