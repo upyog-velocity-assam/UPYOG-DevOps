@@ -618,6 +618,8 @@ inbox:
   #W&S index names
   water-es-index : water-services
   sewerage-es-index : sewerage-services
+  egov-internal-microservice-user-uuid : 28e62c47-927e-4367-9828-c40911d44810
+  
  
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
