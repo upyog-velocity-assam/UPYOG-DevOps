@@ -59,6 +59,7 @@ cluster-configs:
         es-infra-host: "elasticsearch-data-v1.es-cluster"
         egov-bnd-freedownload-tenants: "pg.testing"
         egov-bnd-live-citizen-tenants: "pg.testing"
+        egov-internal-microservice-user-uuid: "28e62c47-927e-4367-9828-c40911d44810"
 
     egov-service-host:
       data:
@@ -618,8 +619,7 @@ inbox:
   #W&S index names
   water-es-index : water-services
   sewerage-es-index : sewerage-services
-  egov-internal-microservice-user-uuid : 28e62c47-927e-4367-9828-c40911d44810
-  
+    
  
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
