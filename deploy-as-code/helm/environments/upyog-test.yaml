@@ -960,7 +960,7 @@ oauth2-proxy:
     configFile: |-
       email_domains = [ "*" ]
       github_org = "upyog"
-      github_team = "Upyog-internal"
+      github_team = "Upyog-kibana"
       upstreams = [ "file:///dev/null" ]
 grafana:
   initContainers:
