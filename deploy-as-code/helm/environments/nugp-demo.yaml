@@ -965,7 +965,7 @@ oauth2-proxy:
     configFile: |-
       email_domains = [ "*" ]
       github_org = "upyog"
-      github_team = "nugp-team,devops"
+      github_team = "nugp-team,devops,upyog-kibana-prod"
       upstreams = [ "file:///dev/null" ]
 
 grafana:
