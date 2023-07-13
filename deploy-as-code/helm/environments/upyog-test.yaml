@@ -329,7 +329,7 @@ egov-persister:
   initContainers:
     gitSync:
       repo: "git@github.com:upyog/upyog-configs"
-      branch: "dev"
+      branch: "Dev-2.0"
 
 national-dashboard-ingest:
   heap: "-Xmx750m -Xms750m"
